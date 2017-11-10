@@ -1,3 +1,4 @@
+(package-initialize)
 ;; Emacs paths
 (setq emacs-lisp-dir "~/.emacs.d/"
       my-elmode-dir (concat emacs-lisp-dir "elmodes/"))
@@ -9,9 +10,20 @@
 (if (file-exists-p "~/.myemacs") 
     (load-file "~/.myemacs"))
 
-;; elisp loading
+;; epitech
 (load "std.el")
 (load "std_comment.el")
+
+;; miniedit
+(load "miniedit.el")
+
+;; theme
+;; (load-theme 'solarized-dark t)
+
+;; smart mode lines
+(setq sml/no-confirm-load-theme t)
+(setq sml/theme 'respectful)
+(sml/setup)
 
 ;; web-mode start when open files
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
@@ -32,3 +44,6 @@
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
+
+;; y or n instead of yes or no
+(fset 'yes-or-no-p 'y-or-n-p)
