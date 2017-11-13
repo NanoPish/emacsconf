@@ -1,15 +1,3 @@
-;;
-;; StdComment.el for Emacs in ~/Emacs
-;; 
-;; Made by Frederic Denis
-;; Login   <fred@epita.fr>
-;; 
-;; Started on  Thu Sep  9 23:34:05 1993 Frederic Denis
-;; Last update Tue Nov 29 18:42:22 2016 Paul Montague
-;;
-;; Based on Comment routines by Isaac
-;;
-
 (if (file-exists-p "/usr/school/etc/emacs/php-mode.el")
     (load-file "/usr/school/etc/emacs/php-mode.el"))
 
@@ -26,7 +14,6 @@
       header-login-mid	""
       header-login-end	">"
       header-started	"Started on  "
-      header-last	"Last update "
       header-for	" for "
       header-in		" in "
       domaine-name	"")
