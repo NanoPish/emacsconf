@@ -6,6 +6,7 @@
       (append load-path (list my-elmode-dir)))
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 ;;MELPA
 (require 'package) ;; You might already have this line
@@ -41,18 +42,29 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
+;; better defaults
+(require 'better-defaults)
+(save-place-mode 1)
+
+;; zenburn theme
+(load-theme 'zenburn t)
+
 ;; line highlight
-(global-hl-line-mode 1)
-(set-face-background 'hl-line "#3e4446")
-(set-face-foreground 'highlight nil)
+(global-hl-line-mode 1);;on
+(set-face-background 'hl-line "#3e4446");;color
+(set-face-foreground 'highlight nil);;keep syntax highlight
 
-;; remove welcome GUI
+;; remove startup screen
 (setq inhibit-startup-screen t)
-
-;; saves
-(setq backup-directory-alist `(("." . "~/.saves")))
-(setq backup-by-copying t)
-(setq delete-old-versions t
-  kept-new-versions 6
-  kept-old-versions 2
-  version-control t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (better-defaults smart-mode-line))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
