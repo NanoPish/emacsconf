@@ -22,8 +22,8 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; epitech
-;;(load "std.el")
-;;(load "std_comment.el")
+(load "std.el")
+(load "std_comment.el")
 
 ;; smart mode lines
 (setq sml/no-confirm-load-theme t)

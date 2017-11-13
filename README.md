@@ -19,6 +19,7 @@
 * MELPA : https://melpa.org/#/
 * web mode : http://web-mode.org/
 * tech base conf
+* projectile : https://github.com/bbatsov/projectile
 
 ### Custom
 
