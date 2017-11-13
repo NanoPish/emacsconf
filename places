@@ -1,5 +1,6 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/belloc_p/.emacs.d/init.el" . 855)
+(("/home/belloc_p/.emacs.d/.gitignore" . 52)
+ ("/home/belloc_p/.emacs.d/init.el" . 855)
  ("/home/belloc_p/.emacs.d/README.md" . 517)
  ("/home/belloc_p/.emacs.d/elpa/projectile-20171109.240/projectile-autoloads.el" . 16805)
  ("/home/belloc_p/.emacs.d/elpa/pkg-info-20150517.443/pkg-info-autoloads.el" . 3776)
