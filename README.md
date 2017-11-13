@@ -6,7 +6,7 @@
 
 ## Installation
 
-* cd
+* cd ~
 * git clone https://github.com/NanoPish/emacsconf .emacd.d
 
 ## Configuration
