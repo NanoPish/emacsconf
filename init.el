@@ -22,8 +22,8 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; epitech
-(load "std.el")
-(load "std_comment.el")
+;;(load "std.el")
+;;(load "std_comment.el")
 
 ;; smart mode lines
 (setq sml/no-confirm-load-theme t)
@@ -56,3 +56,15 @@
 
 ;; remove startup screen
 (setq inhibit-startup-screen t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (projectile smart-mode-line better-defaults))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

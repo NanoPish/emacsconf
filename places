@@ -1,3 +1,6 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/belloc_p/.emacs.d/init.el" . 191)
+(("/home/belloc_p/.emacs.d/init.el" . 1863)
+ ("/home/belloc_p/.emacs.d/elpa/projectile-20171109.240/projectile-autoloads.el" . 16805)
+ ("/home/belloc_p/.emacs.d/elpa/pkg-info-20150517.443/pkg-info-autoloads.el" . 3776)
+ ("/home/belloc_p/.emacs.d/elpa/epl-20150517.433/epl-autoloads.el" . 242)
  ("/home/belloc_p/.emacs.d/elisp/web-mode.el" . 49664))
