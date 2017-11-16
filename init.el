@@ -58,6 +58,10 @@
 (set-face-background 'hl-line "#3e4446");;color
 (set-face-foreground 'highlight nil);;keep syntax highlight
 
+;; PYTHON JEDI AUTOCOMPLETION
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)                 ; optional
+
 ;; remove startup screen
 (setq inhibit-startup-screen t)
 (custom-set-variables
@@ -65,7 +69,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (projectile smart-mode-line better-defaults))))
+ '(package-selected-packages (quote (jedi projectile smart-mode-line better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
