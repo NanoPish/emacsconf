@@ -42,9 +42,13 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
-;; better defaults
+;; better defaults (checking version for saveplace init syntax
 (require 'better-defaults)
-(save-place-mode 1)
+(if (<= emacs-major-version 24)
+    (progn
+      (require 'saveplace)
+      (setq-default save-place t))
+  (save-place-mode 1))
 
 ;; zenburn theme
 (load-theme 'zenburn t)
