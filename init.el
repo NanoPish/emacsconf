@@ -62,6 +62,9 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)                 ; optional
 
+;; copy paste X
+(setq x-select-enable-clipboard t)
+
 ;; remove startup screen
 (setq inhibit-startup-screen t)
 (custom-set-variables

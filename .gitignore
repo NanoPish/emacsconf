@@ -4,3 +4,6 @@
 ./places
 ./auto-save-list
 places
+tramp
+ac-comphist.dat
+ido.last
