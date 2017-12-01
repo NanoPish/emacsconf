@@ -58,7 +58,7 @@
 (set-face-background 'hl-line "#3e4446");;color
 (set-face-foreground 'highlight nil);;keep syntax highlight
 
-;; jedi python autocomplete
+;; PYTHON JEDI AUTOCOMPLETION
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)                 ; optional
 
@@ -72,20 +72,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (nlinum jedi projectile smart-mode-line better-defaults))))
+ '(package-selected-packages (quote (jedi projectile smart-mode-line better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-;; nlinum
-(setq nlinum-format "%3d\u2502")
-(setq nlinum-highlight-current-line t)
-(add-hook 'prog-mode-hook 'nlinum-mode)
-
-;; smooth scrolling
-(setq scroll-conservatively 10000)

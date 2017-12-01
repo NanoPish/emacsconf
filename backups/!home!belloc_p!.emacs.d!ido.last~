@@ -1,0 +1,43 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/ssh:simpleUser@vps468843.ovh.net:/" . "root/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/belloc_p/rendu/pamela/"
+ "/ssh:simpleUser@vps468843.ovh.net:/root/"
+ "/ssh:simpleUser@"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "pamela_module.c"
+ "pamela_module.h"
+ "pamela_utility.h"
+ "pamela_utility-test.check"
+ "pamela_container.c"
+ "pamela_utility.c"
+ "Makefile"
+ "pamela.h"
+ "resumescraper"
+ "vps468843.ovh.net"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/belloc_p/rendu/pamela/" (23068 16470 11897 919000) "pamela_module.h" "./" "../" "pamela_module.c" "pamela_utility-test.check" "README.md" "pamela_container.c" ".git/" "pamela_utility.h" "pamela_utility.c" "Makefile")
+
+ ("/home/" (22827 12912 138957 730000) "./" "../" "belloc_p/")
+
+ ("/home/belloc_p/" (23060 29287 275442 122000) ".clsvis/" ".profile" ".CLion2017.2/" ".java/" ".designer/" ".gnome2/" ".vscode/" ".bash_history" "./" ".PhpStorm2017.2/" ".gconf/" ".compiz/" ".dmrc" ".pki/" "Downloads/" ".gvfs/" ".m2/" ".ICEauthority" ".gnome2_private/" ".thumbnails/" ".zsh_history" "Documents/" ".mysql_history" "../" ".android/" ".ssh/" "Desktop/" ".zcompdump-dfghjk-5.1.1" "Public/" ".zcompdump" ".credentials/" "nano.save" ".meteorsession" ".sudo_as_admin_successful" ".zsh_history_bad" ".zsh-update" ".gem/" ".oh-my-zsh/" ".gnupg/" ".bashrc" ".mozilla/" ".Xauthority" ".local/" ".meteor/" ".IntelliJIdea2017.2/" "Videos/" ".thunderbird/" ".nano/" ".xsession-errors" ".adobe/" ".gfclient/" "AMDAPPSDK-3.0/" ".gimp-2.8/" ".zshrc" "Music/" ".macromedia/" "rendu/" "VirtualBox VMs/" ".gnome/" ".gitconfig" "code/" ".bundle/" ".xsession-errors.old" ".grafx2/" "Templates/" ".WebStorm2017.2/" ".dbus/" ".npm/" ".gradle/" ".emacs.d/" ".python_history" ".docker/" ".xinputrc" "Pictures/" ".bash_logout" ".Toolbox/" ".bashrc.bak" ".QtWebEngineProcess/" ".config/" ".cache/")
+
+ ("/home/belloc_p/rendu/" (23060 28208 215410 111000) "dailyprogramming340intermediate/" "./" "dailyprogramming340easy/" "pamela/" "../" "B5MEMO/")
+
+ ("/home/belloc_p/.emacs.d/" (23053 41796 595520 751000) "backups/" "./" "auto-save-list/" "../" "themes/" ".gitignore" "places" "init.el" "README.md" ".git/" "ac-comphist.dat" "elpa/" ".python-environments/" "elisp/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
