@@ -96,3 +96,7 @@
 ;; disable visible bell (bottom/top of file blink)
 (setq visible-bell       nil
       ring-bell-function #'ignore)
+
+;; system copy-paste
+(setq x-select-enable-clipboard t)
+
