@@ -67,6 +67,7 @@
 
 ;; remove startup screen
 (setq inhibit-startup-screen t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -85,10 +86,13 @@
 ;; nlinum
 (setq nlinum-format "%3d\u2502")
 (setq nlinum-highlight-current-line t)
-(add-hook 'prog-mode-hook 'nlinum-mode)
 
 ;; smooth scrolling
 (setq scroll-conservatively 10000)
 
 ;; projectile
 (projectile-global-mode)
+
+;; disable visible bell (bottom/top of file blink)
+(setq visible-bell       nil
+      ring-bell-function #'ignore)
