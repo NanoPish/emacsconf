@@ -89,3 +89,6 @@
 
 ;; smooth scrolling
 (setq scroll-conservatively 10000)
+
+;; projectile
+(projectile-global-mode)
