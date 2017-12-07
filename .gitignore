@@ -1,10 +1,11 @@
-./saves
-./secret
-./backup
-./places
-./auto-save-list
+saves
+secret
+backup
+places
+auto-save-list
 places
 tramp
 ac-comphist.dat
 ido.last
 projectile-bookmarks.eld
+.cache
