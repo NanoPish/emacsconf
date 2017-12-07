@@ -100,3 +100,6 @@
 ;; system copy-paste
 (setq x-select-enable-clipboard t)
 
+;; fullscreen at startup
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
