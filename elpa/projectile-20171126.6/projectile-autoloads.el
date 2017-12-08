@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "projectile" "projectile.el" (23049 55116 227701
-;;;;;;  27000))
+;;;### (autoloads nil "projectile" "projectile.el" (23082 49110 328752
+;;;;;;  377000))
 ;;; Generated autoloads from projectile.el
 
 (autoload 'projectile-version "projectile" "\
@@ -366,6 +366,15 @@ Show a list of recently visited files in a project.
 
 \(fn)" t nil)
 
+(autoload 'projectile-configure-project "projectile" "\
+Run project configure command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+\(fn ARG)" t nil)
+
 (autoload 'projectile-compile-project "projectile" "\
 Run project compilation command.
 
@@ -373,7 +382,7 @@ Normally you'll be prompted for a compilation command, unless
 variable `compilation-read-command'.  You can force the prompt
 with a prefix ARG.
 
-\(fn ARG &optional DIR)" t nil)
+\(fn ARG)" t nil)
 
 (autoload 'projectile-test-project "projectile" "\
 Run project test command.
