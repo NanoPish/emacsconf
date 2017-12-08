@@ -88,6 +88,10 @@
 
 ;; fullscreen at startup
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+;; company
+(add-hook 'after-init-hook 'global-company-mode)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -95,7 +99,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (smart-mode-line projectile nlinum jedi flycheck better-defaults))))
+    (company smart-mode-line projectile nlinum jedi flycheck better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
