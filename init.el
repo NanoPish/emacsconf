@@ -24,6 +24,7 @@
 ;; epitech
 (load "std.el")
 (load "std_comment.el")
+(load "yaml.el")
 
 ;; smart mode lines
 (setq sml/no-confirm-load-theme t)
