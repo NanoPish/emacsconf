@@ -1,0 +1,14 @@
+<?php
+$apiKey = 'sadfasd8f';
+$ch = curl_init('10.0.3.232:8000/v1/users/current/email');
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST,"GET");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    'apiToken: ' . $apiKey)
+);
+
+$result = curl_exec($ch);
+$result = json_decode($result);
+//$username = $result->data->email;
+var_dump($username);
+?>

@@ -93,6 +93,12 @@
 ;; company
 (add-hook 'after-init-hook 'global-company-mode)
 
+(defun big-files-performances-hook ()
+  (when (> (buffer-size) (* 1000 100))
+    (global-nlinum-mode 0)))
+
+(add-hook 'find-file-hook 'big-files-performances-hook)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

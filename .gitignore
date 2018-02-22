@@ -9,3 +9,5 @@ ac-comphist.dat
 ido.last
 projectile-bookmarks.eld
 .cache
+.python-environments
+backups

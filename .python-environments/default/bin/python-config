@@ -1,4 +1,4 @@
-#!/home/belloc_p/.emacs.d/.python-environments/default/bin/python
+#!/home/nano/.emacs.d/.python-environments/default/bin/python
 
 import sys
 import getopt

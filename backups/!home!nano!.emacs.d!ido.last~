@@ -1,0 +1,42 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/nano/code/nobo/front-client/src/" . "Controller/")
+ ("/home/nano/code/nobo/front-client/" . "src/")
+ ("/home/nano/" . "scripts/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/nano/code/nobo/front-client/src/Controller/"
+ "/home/nano/scripts/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "SecurityController.php"
+ "weather.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/nano/code/nobo/front-client/src/Controller/" (23155 13054 820365 858000) "RegistrationController.php" "referentsController.php" "paymentController.php" ".gitignore" "../" "profileController.php" "./" "homeController.php" "prestationsController.php" "SecurityController.php")
+
+ ("/home/nano/code/nobo/front-client/src/" (23174 47453 599232 115000) "Security/" "Kernel.php" "Repository/" "../" "Migrations/" "Form/" "Entity/" "./" "Controller/")
+
+ ("/home/nano/code/nobo/front-client/" (23155 13789 307070 226000) "config/" "vendor/" ".gitignore" "composer.json" "public/" "node_modules/" "../" "package.json" "package-lock.json" "webpack.config.js" ".git/" ".env.dist" "var/" "templates/" "./" "translations/" "bin/" "src/" "symfony.lock" "README.md" ".env" "assets/" "composer.lock")
+
+ ("/home/nano/code/nobo/front-client/templates/" (23180 3407 396327 764000) "profile.html.twig" "security/" "../" "referents.html.twig" "home.html.twig" "./" "payment.html.twig" "base.html.twig" "prestations.html.twig")
+
+ ("/home/nano/code/nobo/front-client/templates/security/" (23174 47090 720221 350000) "../" "login.html.twig" "./" "register.html.twig")
+
+ ("/home/nano/code/nobo/api-nobo/src/routes/" (23179 64283 573189 528000) "authentication.php" "customers.php" "subscribers.php" "governesses.php" "promocodes.php" "addresses.php" "newsletters.php" "../" "img.php" "payments.php" "providers.php" "users.php" "waitingList.php" "payment_cards.php" "lists.php" "mailjet.php" "./" "combos.php" "transactions.php" "tasks.php" "providerApp.php" "missions.php" "stripe.php")
+
+ ("/home/nano/scripts/" (23153 58993 779725 866000) "../" "./" "lock.png" "weather.py" "wallpaper.jpg")
+
+ ("/home/nano/" (23153 58867 966385 916000) ".emacs.d/" ".i3/" ".xinitrc" "trizen/" "Desktop/" ".mozilla/" ".gnupg/" "../" ".Xresources" ".bash_logout" ".fehbg" ".bash_profile" ".Xauthority" "Downloads/" "logs" ".config/" ".cache/" ".bashrc" "./" ".lesshst" ".ssh/" ".bash_history" ".yadm/" "README.md" ".local/" ".gitconfig" "scripts/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,73 @@
+<?php
+// src/Controller/LoginController.php
+namespace App\Controller;
+
+use App\Entity\LoginData;
+use App\Form\LoginForm;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Routing\Annotation\Route;
+
+class LoginController extends Controller
+{
+    /**
+     * @Route("/login", name="login")
+     */ 
+    public function login(Request $request)
+    {
+        $error = null;
+
+        // init form data
+        $loginData = new LoginData();
+
+        // create form
+        $form = $this->createForm(LoginForm::class, $loginData);
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted()) {
+            if ($form->isValid())
+            {
+                // $form->getData() holds the submitted values
+                // but, the original `$task` variable has also been updated
+                $loginData = $form->getData();
+                
+                //build json content to be posted
+
+                $data = array("email" => $loginData->getEmail(),
+                              "password" => $loginData->getPassword());
+                $data_string = json_encode($data);
+                
+                // build curl post request
+                $ch = curl_init('10.0.3.232:8000/v1/authentication');
+                curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+                    'Content-Type: application/json',
+                    'Content-Length: ' . strlen($data_string)
+                ));
+
+                $result = curl_exec($ch);
+                $result = json_decode($result);
+                if ($result == null || $result->data == null)      
+                    $error = 'Identifiants incorrects';
+                else
+                    return $this->redirectToRoute('home', array('apikey' => $result->data->token));
+            }
+            else
+            {
+                $error = "L'email est incorrect.";
+            }
+        }
+
+        // render template
+        return $this->render('login.html.twig', array(
+            'form' => $form->createView(),
+            'error' => $error
+        ));
+    }
+}
+?>
