@@ -18,6 +18,10 @@
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 
+;; auto update
+(when (not package-archive-contents)
+  (package-refresh-contents))
+
 ;; y or n instead of yes or no
 (fset 'yes-or-no-p 'y-or-n-p)
 
@@ -106,7 +110,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (cmake-mode typescript-mode company smart-mode-line projectile nlinum jedi flycheck better-defaults))))
+    (org-edna cmake-mode typescript-mode company smart-mode-line projectile nlinum jedi flycheck better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
