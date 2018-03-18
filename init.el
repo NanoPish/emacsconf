@@ -97,6 +97,10 @@
 ;; company
 (add-hook 'after-init-hook 'global-company-mode)
 
+;; indent
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+
 (defun big-files-performances-hook ()
   (when (> (buffer-size) (* 1000 100))
     (global-nlinum-mode 0)))
